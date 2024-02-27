@@ -7,10 +7,10 @@
 You can use it like:
 
 ```bash
-make build tag=qa env=test
+make build tag=qa stage=test
 ```
 
-You need to make `.env.test` file to make docker build work properly.(if you set `env=test` option.)
+You need to make `.env.test` file to make docker build work properly.(if you set `env=stage` option.)
 
 If you only use `.env` you can disable `COPY .env.$STAGE .env.local` in the `Dockerfile`
 
