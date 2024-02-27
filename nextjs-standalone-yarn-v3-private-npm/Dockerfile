@@ -11,7 +11,7 @@ ARG NPM_REGISTRY_HTTP=$NPM_REGISTRY_HTTP
 ARG NPM_SCOPE=$NPM_SCOPE
 
 RUN npm config set //${NPM_REGISTRY}:_authToken ${NPM_TOKEN} \
-&& npm config set @aww-vzc:registry https://${NPM_REGISTRY}
+&& npm config set @${NPM_SCOPE}:registry https://${NPM_REGISTRY}
 
 RUN yarn config set "npmRegistries['${NPM_REGISTRY_HTTP}'].npmAlwaysAuth" true \
 && yarn config set "npmRegistries['${NPM_REGISTRY_HTTP}'].npmAuthToken" ${NPM_TOKEN} \
