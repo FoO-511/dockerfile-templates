@@ -4,14 +4,14 @@
 
 ## usage
 
-you can use it like:
+You can use it like:
 
 ```bash
 make build tag=qa env=test
 ```
 
-you need to make `.env.test` file to make docker build work properly.
-if you only use `.env` you can disable `COPY .env.$STAGE .env.local` of the `Dockerfile`
+You need to make `.env.test` file to make docker build work properly.(if you set `env=test` option.)
+If you only use `.env` you can disable `COPY .env.$STAGE .env.local` in the `Dockerfile`
 
 ## info
 
@@ -32,7 +32,7 @@ RUN yarn config set "npmRegistries['${NPM_REGISTRY_HTTP}'].npmAlwaysAuth" true \
 && yarn config set nodeLinker node-modules
 ```
 
-this part from `Dockerfile` will make your `.yarnrc.yml` in docker build look like below.
+This part from `Dockerfile` will make your `.yarnrc.yml` in docker build look like below.
 
 ```yaml
 nodeLinker: node-modules
