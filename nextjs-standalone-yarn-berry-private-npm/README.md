@@ -24,7 +24,7 @@ if you only use `.env` you can disable `COPY .env.$STAGE .env.local` of the `Doc
 
 ### yarn config set
 
-```docker
+```dockerfile
 RUN yarn config set "npmRegistries['${NPM_REGISTRY_HTTP}'].npmAlwaysAuth" true \
 && yarn config set "npmRegistries['${NPM_REGISTRY_HTTP}'].npmAuthToken" ${NPM_TOKEN} \
 && yarn config set "npmScopes['${NPM_SCOPE}'].npmAlwaysAuth" true \
