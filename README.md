@@ -1,7 +1,8 @@
 # Dockerfile tamplates for frontend dev
 
 backup for my self.
-using makefile for docker login, build, tag, push.
+
+`using`makefile`for`docker login, build, tag, push`.
 
 ## contents
 
