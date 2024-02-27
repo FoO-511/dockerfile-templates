@@ -11,6 +11,7 @@ make build tag=qa env=test
 ```
 
 You need to make `.env.test` file to make docker build work properly.(if you set `env=test` option.)
+
 If you only use `.env` you can disable `COPY .env.$STAGE .env.local` in the `Dockerfile`
 
 ## info
@@ -35,6 +36,8 @@ RUN yarn config set "npmRegistries['${NPM_REGISTRY_HTTP}'].npmAlwaysAuth" true \
 This part from `Dockerfile` will make your `.yarnrc.yml` in docker build look like below.
 
 ```yaml
+(...other options in your host .yarnrc.yml)
+
 nodeLinker: node-modules
 
 npmRegistries:
