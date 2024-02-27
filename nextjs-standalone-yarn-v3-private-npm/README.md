@@ -1,4 +1,4 @@
-# yarn v3 with private registry and next standalone build
+# `next.js standalone build` with `yarn berry` using `private npm` and `npm scope`
 
 `next.js standalone build` is quite incompatible pnp so I use node-modules instead.
 

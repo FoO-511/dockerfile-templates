@@ -1,11 +1,11 @@
 # Dockerfile tamplates for frontend dev
 
-backup for my self.
+Backup for my self.
 
-using`makefile`for`docker login, build, tag, push`.
+Using `makefile` for `docker login, build, tag, push`.
 
 ## contents
 
-### [nextjs-standalone-yarn-berry-private-npm](./nextjs-standalone-yarn-berry-private-npm)
+### [nextjs-standalone-yarn-v3-private-npm](./nextjs-standalone-yarn-v3-private-npm)
 
 `next.js standalone build` with `yarn berry` using `private npm` and `npm scope`.
